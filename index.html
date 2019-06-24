@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hangman Game</title>
+
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Hangman</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+       <h1>Welcome to Hangman!</h1>
+       <h3>Please select a difficulty:</h3>
+       <form>
+           <input type="radio" id="difficulty" value="easy">Easy
+           <input type="radio" id="difficulty" value="medium">Medium
+           <input type="radio" id="difficulty" value="hard">Hard
+           <br>
+           <button id="btn" onclick="">Play!</button>
+       </form>
+    </div>
+    <div id="playBoard" >
+        <div id="buttons">
+        </div>  
+        <p id="catagoryName"></p>
+        <div id="hold">
+        </div>
+        <p id="mylives"></p>
+         <canvas id="stickman"></canvas>
+        <div class="container">
+          <button id="reset">Play again</button>
+        </div>
+    </div>
 </body>
 </html>
